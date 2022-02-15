@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State var currentPuzzle = puzzlesMock[0]
+    @State var selectedLetters: [Letters] = []
     
     var body: some View {
         VStack {
@@ -53,8 +54,15 @@ struct HomeView: View {
                     ForEach(0..<currentPuzzle.awnser.count, id:\.self) { index in
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color(UIColor.systemBlue.withAlphaComponent(0.6)))
+                                .fill(Color(UIColor.systemBlue.withAlphaComponent(selectedLetters.count > index ? 1 : 0.2)))
                                 .frame(height: 40)
+                            
+                            if selectedLetters.count > index {
+                                Text(selectedLetters[index].value)
+                                    .font(.title)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.white)
+                            }
                         }
                     }
                 }
@@ -66,14 +74,20 @@ struct HomeView: View {
             HoneyCombGridView(items: currentPuzzle.letters) { iElement in
                 ZStack {
                     HExagonShape()
-                        .fill(Color.yellow)
+                        .fill(isSelected(letter: iElement) ? Color.yellow : Color.white)
                         .aspectRatio(contentMode: .fit)
                         .shadow(color: .black.opacity(0.05), radius: 5, x: 10, y: 5)
                         .shadow(color: .black.opacity(0.05), radius: 5, x: -5, y: 8)
+                    
+                    Text(iElement.value)
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                        .foregroundColor(isSelected(letter: iElement) ? .white : .gray.opacity(0.5))
                 }
                 .contentShape(HExagonShape())
                 .onTapGesture {
                     //add
+                    addLetters(letters: iElement)
                 }
             }
             
@@ -97,6 +111,25 @@ struct HomeView: View {
         .onAppear {
             //when appear generate letters
             generateLetters()
+        }
+    }
+    
+    private func addLetters(letters: Letters) {
+        withAnimation {
+            if isSelected(letter: letters) {
+                selectedLetters.removeAll { currentLetter in
+                    return currentLetter.id == letters.id
+                }
+            } else {
+                if selectedLetters.count == currentPuzzle.awnser.count { return }
+                selectedLetters.append(letters)
+            }
+        }
+    }
+    
+    private func isSelected(letter: Letters) -> Bool {
+        return selectedLetters.contains { currentLetter in
+            return currentLetter.id == letter.id
         }
     }
     
