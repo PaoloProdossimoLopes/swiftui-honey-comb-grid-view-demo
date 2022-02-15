@@ -93,7 +93,9 @@ struct HomeView: View {
             
             //NExt Button
             Button {
-                
+                selectedLetters.removeAll()
+                currentPuzzle = puzzlesMock[2]
+                generateLetters()
             } label: {
                 Text("Next")
                     .font(.title2.bold())

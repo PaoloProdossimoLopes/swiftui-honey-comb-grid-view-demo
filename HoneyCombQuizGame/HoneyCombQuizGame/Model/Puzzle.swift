@@ -23,8 +23,8 @@ struct Letters: Identifiable {
 }
 
 var puzzlesMock: [Puzzle] = [
-    .init(imageName: "crown", awnser: "curorowkn", jumbbleWord: "curorowkn".uppercased()),
-    .init(imageName: "naruto", awnser: "naruto", jumbbleWord: "NARUTO"),
-    .init(imageName: "goku", awnser: "goku", jumbbleWord: "GOKU"),
-    .init(imageName: "Minion", awnser: "minion", jumbbleWord: "MINION"),
+    .init(imageName: "crown", awnser: "crown", jumbbleWord: "cradownasd".uppercased()),
+    .init(imageName: "naruto", awnser: "naruto", jumbbleWord: "NFSAFSRUTDSFO".uppercased()),
+    .init(imageName: "goku", awnser: "goku", jumbbleWord: "FSGODKUFS".uppercased()),
+    .init(imageName: "Minion", awnser: "minion", jumbbleWord: "MSFINSFIOFN".uppercased()),
 ]
