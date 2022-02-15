@@ -12,7 +12,7 @@ In this project I use the SwiftUI to create an game app.
 
 
 <!-- INFO BADGES -->
-[![GitHub](https://img.shields.io/github/forks/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-democolor=black&style=flat-square)](https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo)
+[![GitHub](https://img.shields.io/github/forks/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo?color=black&style=flat-square)](https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo)
 [![GitHub](https://img.shields.io/github/stars/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo?color=black&style=flat-square)](https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo)
 [![GitHub](https://img.shields.io/github/issues/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo?color=black&style=flat-square)](https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo/issues)
 [![GitHub](https://img.shields.io/github/issues-pr/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo?color=black&style=flat-square)](https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo/pulls)
