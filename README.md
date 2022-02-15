@@ -40,9 +40,8 @@ In this project I use the SwiftUI to create an game app.
 
 <!-- SCREENSHOTS -->
 ## 📸  SCREENSHOTS <a name="screenshots"></a>
-<!-- 
-<img src="https://github.com/PaoloProdossimoLopes/repository-template/blob/main/README_ASSETS/SIMULADOR_LOADER.png" height="300">                                 <img src="https://github.com/PaoloProdossimoLopes/repository-template/blob/main/README_ASSETS/SIMULADOR_HOME.png" height="300">                               
--->
+<img src="https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo/blob/main/README_ASSETS/SCREENSHOTS/1.png" height="400">                     <img src="https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo/blob/main/README_ASSETS/SCREENSHOTS/2.png" height="400">                     <img src="https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo/blob/main/README_ASSETS/SCREENSHOTS/3.png" height="400">                     <img src="https://github.com/PaoloProdossimoLopes/swiftui-honey-comb-grid-view-demo/blob/main/README_ASSETS/SCREENSHOTS/4.png" height="400">                             
+
 <p align="right">(<a href="#top">BACK TO TOP</a>)</p>
 
 
