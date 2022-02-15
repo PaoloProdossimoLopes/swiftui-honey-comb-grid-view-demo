@@ -49,12 +49,12 @@ struct HomeView: View {
                     .padding()
                 
                 //Puzzle fill blanks
-                HStack(spacing: 10) {
+                HStack(spacing: 5) {
                     ForEach(0..<currentPuzzle.awnser.count, id:\.self) { index in
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color(UIColor.systemBlue.withAlphaComponent(0.6)))
-                                .frame(height:60)
+                                .frame(height: 40)
                         }
                     }
                 }
@@ -63,6 +63,19 @@ struct HomeView: View {
             .background(.white, in: RoundedRectangle(cornerRadius: 15))
             
             //Custom Honey comb
+            HoneyCombGridView(items: currentPuzzle.letters) { iElement in
+                ZStack {
+                    HExagonShape()
+                        .fill(Color.yellow)
+                        .aspectRatio(contentMode: .fit)
+                        .shadow(color: .black.opacity(0.05), radius: 5, x: 10, y: 5)
+                        .shadow(color: .black.opacity(0.05), radius: 5, x: -5, y: 8)
+                }
+                .contentShape(HExagonShape())
+                .onTapGesture {
+                    //add
+                }
+            }
             
             //NExt Button
             Button {
@@ -76,11 +89,21 @@ struct HomeView: View {
                     .background(Color(UIColor.systemBlue.withAlphaComponent(0.6)),
                                 in: RoundedRectangle(cornerRadius: 15))
             }
-                .padding(.top)
+            .padding(.top)
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.gray.opacity(0.2))
+        .onAppear {
+            //when appear generate letters
+            generateLetters()
+        }
+    }
+    
+    private func generateLetters() {
+        currentPuzzle.jumbbleWord.forEach { character in
+            currentPuzzle.letters.append(Letters(value: String(character)))
+        }
     }
 }
 

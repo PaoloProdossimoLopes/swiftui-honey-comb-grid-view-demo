@@ -13,6 +13,8 @@
 		B104237827BBD7A9007642B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B104237727BBD7A9007642B4 /* Preview Assets.xcassets */; };
 		B104238127BBD802007642B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B104238027BBD802007642B4 /* HomeView.swift */; };
 		B135F92427BBDF7900521EAD /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135F92327BBDF7900521EAD /* Puzzle.swift */; };
+		B135F92627BBE47300521EAD /* HoneyCombGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135F92527BBE47300521EAD /* HoneyCombGridView.swift */; };
+		B135F92827BBF0AC00521EAD /* HExagonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B135F92727BBF0AC00521EAD /* HExagonShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		B104237727BBD7A9007642B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B104238027BBD802007642B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B135F92327BBDF7900521EAD /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		B135F92527BBE47300521EAD /* HoneyCombGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyCombGridView.swift; sourceTree = "<group>"; };
+		B135F92727BBF0AC00521EAD /* HExagonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HExagonShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				B104238027BBD802007642B4 /* HomeView.swift */,
+				B135F92527BBE47300521EAD /* HoneyCombGridView.swift */,
+				B135F92727BBF0AC00521EAD /* HExagonShape.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 				B135F92427BBDF7900521EAD /* Puzzle.swift in Sources */,
 				B104237327BBD7A6007642B4 /* ContentView.swift in Sources */,
 				B104237127BBD7A6007642B4 /* HoneyCombQuizGameApp.swift in Sources */,
+				B135F92827BBF0AC00521EAD /* HExagonShape.swift in Sources */,
+				B135F92627BBE47300521EAD /* HoneyCombGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

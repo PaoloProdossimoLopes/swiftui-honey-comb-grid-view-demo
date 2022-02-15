@@ -12,10 +12,18 @@ struct Puzzle: Identifiable {
     let imageName: String
     let awnser: String
     let jumbbleWord: String
+    
+    var letters: [Letters] = []
+}
+
+struct Letters: Identifiable {
+    let id: String = UUID().uuidString
+    
+    let value: String
 }
 
 var puzzlesMock: [Puzzle] = [
-    .init(imageName: "crown", awnser: "crown", jumbbleWord: "crown".uppercased()),
+    .init(imageName: "crown", awnser: "curorowkn", jumbbleWord: "curorowkn".uppercased()),
     .init(imageName: "naruto", awnser: "naruto", jumbbleWord: "NARUTO"),
     .init(imageName: "goku", awnser: "goku", jumbbleWord: "GOKU"),
     .init(imageName: "Minion", awnser: "minion", jumbbleWord: "MINION"),
